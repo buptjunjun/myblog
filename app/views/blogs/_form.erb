@@ -1,7 +1,30 @@
+<style>
+
+  .title{
+      padding:4px;
+      font-size:18px;
+      margin:2px;
+      min-width: 1000px;
+  }
+
+   .textarea
+   {
+       width:90%;
+       padding:4px;
+       margin:2px;
+       font-size:16px;
+   }
+</style>
+
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('content');
+</script>
+
 <div class="title">
-  <%=f.text_field :title %>
+  <%=f.text_field :title , class:"title"%>
 </div>
 
 <div class="content">
-<%=f.text_area :content %>
+    <%=f.text_area :content,class:"textarea",id:"content"%>
 </div>
