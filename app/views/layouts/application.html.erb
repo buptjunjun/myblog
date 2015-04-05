@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myblog</title>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+  <style>
+
+    *
+    {
+        font-family: Palatino,​Times New Roman
+    }
+  </style>
+</head>
+<body align="">
+<div class="col-md-12" style="background:#000000;color:white;font-size:25px;padding:10px;margin-bottom:25px">
+    君君的内裤
+</div>
+<%= yield %>
+
+<div style="position:fixed;bottom:0;width:100%;border-top:1px solid;color:#000000;font-size:16px;text-align:center;">
+  junjun@baicizhan.com
+</div>
+
+</body>
+</html>

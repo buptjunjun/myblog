@@ -1,0 +1,8 @@
+<%= form_for @blog , :url=>blog_path(@blog) do |f|%>
+    <%=render :partial => "form" , :locals=>{:f=>f}%>
+    <%=f.collection_check_boxes(:tag_ids, Tag.all, :id,:name) %>
+    <%=f.submit '保存'%>
+<% end %>
+
+<%= link_to "管理标签", tags_path %>
+<%= link_to "返回列表", blogs_path %>

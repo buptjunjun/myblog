@@ -1,0 +1,6 @@
+<%= form_for(@blog)  do |f|%>
+    <%=render :partial => "form" , :locals=>{:f=>f}%>
+    <%=f.submit%>
+<% end %>
+
+<%=link_to "回到博客列表" ,blogs_path %>

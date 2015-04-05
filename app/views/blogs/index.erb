@@ -1,0 +1,43 @@
+
+<style>
+  .blog_summary_div
+  {
+      margin:15px;
+  }
+
+  .blog_summary_title
+  {
+    font-size:16px;
+  }
+</style>
+    <% @blogs.each do |blog| %>
+
+      <div class="blog_summary_div">
+        <div class="blog_summary_title">
+          <%=link_to blog.title  , blog_path(blog)%>
+        </div>
+        <div class="blog_summary_content">
+          <%= blog.content %>
+        </div>
+
+        <div class="blog_summary_bottom">
+          <span><%= blog.created_at %></span>
+          <% blog.tags.each do |tag| %>
+              <%= tag.name %>
+          <% end %>
+
+        </div>
+
+        <% if session[:user].present? %>
+            <%=link_to "edit",edit_blog_path(blog) %>
+        <% end %>
+
+      </div>
+    <% end %>
+
+
+<% if session[:user].present? %>
+    <%= link_to "new", new_blog_path%>
+<% end %>
+
+<%= will_paginate @books, :container => false %>

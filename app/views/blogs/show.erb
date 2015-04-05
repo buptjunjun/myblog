@@ -1,0 +1,17 @@
+
+<div class="col-md-12">
+   <div class="title">
+        <%= @blog.title %>
+   </div>
+  <div class="content">
+    <%= @blog.content %>
+  </div>
+  <div class="data">
+    <%= time_tag(@blog.updated_at) %>
+  </div>
+  <% if session[:user].present? %>
+      <%=link_to "编辑" ,edit_blog_path(@blog) %>
+  <% end %>
+
+  <%=link_to "回到博客列表" ,blogs_path %>
+</div>

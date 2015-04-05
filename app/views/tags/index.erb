@@ -1,0 +1,12 @@
+<%= form_for(@tag) do |f|%>
+    <%= f.text_field :name %>
+    <%= f.submit  %>
+<% end %>
+
+
+<% @tags.each do |tag|%>
+    <%=tag.name%>
+<% end %>
+
+<%= link_to "返回列表", blogs_path %>
+
