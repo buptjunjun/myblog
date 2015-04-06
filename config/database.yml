@@ -24,6 +24,8 @@ production:
 
 production:
    adapter:  mysql2
+   host: localhost
+   port: 3366
    encoding: utf8
    database: myblog
    username: root

@@ -16,7 +16,7 @@
     <data-source source="LOCAL" name="Rails myblog: production" uuid="64f0ede1-82d4-4ed9-b285-71b61564206b">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/myblog</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3366/myblog</jdbc-url>
       <user-name>root</user-name>
       <user-password>dfd8dfc5dfc5dfde</user-password>
       <libraries />
