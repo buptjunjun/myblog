@@ -27,4 +27,4 @@ production:
    encoding: utf8
    database: myblog
    username: root
-   password:
+   password: root
