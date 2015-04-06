@@ -30,3 +30,4 @@ production:
    database: myblog
    username: root
    password: root
+   socket: /var/www/data/programs/mysql-5.5.37-linux2.6-x86_64/tmp/mysql.sock
